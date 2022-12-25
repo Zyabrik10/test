@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Index</title>
+</head>
+<body>
+	<form action="" method="post">
+		<input type="file" accept="image/*,.png,jpg,jpeg", name="img" multiple >
+		<button type="submit">submit</button>
+	</form>
+	<div class="img">
+		<% console.log(img) %>
+		<% img.forEach((photo)=>{ %>
+			<img src="<%= photo %>" alt="none" >
+		<% }); %>
+	</div>
+</html>
